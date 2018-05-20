@@ -1,0 +1,25 @@
+.main{
+    max-width:1200px;
+}
+
+h1{
+   text-align: center;
+}
+h1:before{
+    content:"";
+    display: block;
+    background: url(assets/imgs/1234.png);
+    
+}
+
+p{
+    margin-left: 2%
+}
+
+.imgContent1{
+    width: 40%;
+    float: right;
+    margin-right: 2%;
+    margin-left: 4%;
+    margin-bottom: 2%;
+}

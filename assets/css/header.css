@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    margin-top:-16px;
+    
+}
+
+.header{
+    max-width:1200px;
+    height: 700px;
+}
+
+.headerDiv{
+    background: url(../imgs/headerBg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+}
+
+.divLogo_left{
+    height: 110px;
+    width: 100px;
+    margin-left: 1.5%;
+    background-image:url(../imgs/logoLeft.png);
+    background-size:100px 100px;
+    background-repeat: no-repeat;
+    background-position: 0px 20px;
+    }
+    
+    
+.divAdress_right{
+    margin-top: -90px;
+    margin-left: 70%;
+   
+    
+}
+.adressPhone,
+.adressEmail{
+    font-size:14px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.divLogo_center{
+    height:430px;
+    background-image: url(../imgs/logocentr.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-top: 60px;
+ 
+}
+
+.divMenu{
+    height:50px;
+    margin-top: 70px;
+    display: flex;
+    background:rgba(0, 0, 0, 0.6);
+    justify-content:center;
+    align-items:center;
+}
+
+.divMenu>.divPynkt{
+    padding-left: 5%;
+    padding-right: 5%;
+    color:#fff;
+}
+.divMenu>.divPynkt:hover{
+     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
+     transform: scale(1.4, 1.4);
+     border-radius: 4px;
+     transition: 0.2s;
+     padding-top: 15px;
+     padding-bottom: 15px;
+}
