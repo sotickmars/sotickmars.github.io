@@ -1,0 +1,28 @@
+.footer{
+    max-width: 1200px;
+    height: 150px;
+    background:linear-gradient(to top, #160c06, #160c06 90%, #fff 100% );
+    padding-top: 40px;
+}
+.divFooter{
+    color:lightgray;
+    font-size: 14px;
+}
+.aFooter{
+    color:#fff;
+}
+.aFooter:hover{
+    color: lightyellow;
+}
+
+.divFooter_center{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 1%
+}
+.button{
+    background:rgba(255, 255,255, 0);
+}
+.aButton{
+    color: #fff;
+}
