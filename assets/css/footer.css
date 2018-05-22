@@ -26,3 +26,70 @@
 .aButton{
     color: #fff;
 }
+.divFooter_right{
+    height: 30px;
+}
+.divFooter_rightVK,
+.divFooter_rightIns{
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 2%;
+    border:2px solid #fff;
+    text-align: center;
+    transform: matrix3d(1, 0, 0.00, -0.007, 0.00, 1, 0.00, 0, 0, 0, 1, 0, 10, 0, 0, 1);
+}
+.divA{
+    color: #fff;
+    font-size: 18px;
+    font-family: cursive
+}
+.divFooter_rightVK:hover,
+.divFooter_rightIns:hover{
+    border-color: #D2691E;
+    background:#FFDEAD;
+    transition: 0.7s;
+    border-radius:50%;
+    animation:ball  1.9s ease-in infinite;
+}
+
+.a:hover{
+    color: #000;
+}
+
+@keyframes ball{
+    
+    0%{
+        transform: translate(0px, 0px);
+        
+    }
+    0%{
+        transform: rotateY(180grad);
+    }
+    20%{
+        transform: translate(0px, -10px);
+        
+        
+    }
+    40%{
+        transform: translate(0px, 0px);
+        
+    }
+    60%{
+        transform: translate(0px, -20px);
+        
+    }
+    
+    80%{
+        transform: translate(0px, 0px);
+        
+    }
+    90%{
+        transform: translate(0px, -5px);
+        
+    }
+    100%{
+        transform: translate(0px, 0px);
+        
+    }
+}
