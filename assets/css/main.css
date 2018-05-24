@@ -123,10 +123,12 @@ p {
 
 .divYslygi_logo{
     border-radius: 50%;
-    height: 18vw; 
+    height: 25vmin;
+    width: 25vmin;
     background-image: url(../imgs/spraitYslygi.png);
     background-repeat: no-repeat;
-    background-size:400%;
+    background-size:450%;
+    margin:0 auto;
 }
 
 .divYslygi_logo1{
