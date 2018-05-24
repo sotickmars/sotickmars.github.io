@@ -21,6 +21,11 @@
 
 .aMenu{
     color: #fff;
+    cursor: pointer;
+}
+.aYslygi{
+    text-decoration: none;
+    color: #000
 }
 p {
     margin-left: 2%;
@@ -121,7 +126,7 @@ p {
     height: 18vw;
     background-image: url(../imgs/spraitYslygi.png);
     background-repeat: no-repeat;
-    background-size:400;
+    background-size:400%;
 }
 
 .divYslygi_logo1{
