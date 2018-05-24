@@ -60,33 +60,18 @@ body{
     
 }
 
-.divMenu>.labelPynkt{
+.divMenu>.divPynkt{
     padding-left: 5%;
     padding-right: 5%;
     color:#fff;
     transition: 0.2s;
 }
 
-.divMenu>.labelPynkt:hover{
+.divMenu>.divPynkt:hover{
      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
      transform: scale(1.4, 1.4);
      border-radius: 4px;
      transition: 0.2s;
      padding-top: 15px;
      padding-bottom: 15px;
-}
-/*input{
-    display: none;
-}*/
-.label{
-    display: block;
-    opacity: 1;
-    color:red;
-    position:relative;
-    right:60%;
-}
-
-#yslygi:checked label:nth-of-type(n+5){
-    color:green;
-    opacity: 1;
 }

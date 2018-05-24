@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/header.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/slaider.css" type="text/css" />
+    <script type="text/javascript" src="assets/js/slider.js"></script>
 </head>
 
 <body>
@@ -22,31 +24,12 @@
                 <div class="adressEmail">email:YSKobrin@gmail.com</div>
             </div>
             <div class="divLogo_center"></div>
-
-
-
-
-
             <div class="divMenu">
-
-                <input type="checkbox" name="yslygi" id="yslygi" />
-                <label class="divPynkt divGlava">Главная</label>
-                <label class="divPynkt divYslygi" for="yslygi">Услуги</label>
-                <label class="divPynkt divWork">Наши работы</label>
-                <label class="divPynkt divContact">Контакты</label>
-
-
+                <div class="divPynkt divGlava"><a class="aMenu" href="#glava" title="Глава">Главная</a></div>
+                <div class="divPynkt divYslygi"><a class="aMenu" href="#yslygi" title="услуги">Услуги</a></div>
+                <div class="divPynkt divWork"><a class="aMenu" href="#work" title="Наши работы">Наши работы</a></div>
+                <div class="divPynkt divContact"><a class="aMenu" href="#contant" title="Контакты">Контакты</a></div>
             </div>
-
-            <label for="_1" class="label">1</label>
-            <label for="_2" class="label">2</label>
-            <label for="_3" class="label">3</label>
-            <label for="_4" class="label">4</label>
-
-
-
-
-
         </div>
     </header>
 
@@ -54,7 +37,7 @@
         <div class="divMain">
             <div class="divZag_one">
                 <div class="divZagol divH1">
-                    <h1>НАСТОЯЩЕЕ КАЧЕСТВО</h1>
+                    <h1 id="glava">НАСТОЯЩЕЕ КАЧЕСТВО</h1>
                 </div>
                 <div class="divZagolAfter"></div>
                 <div class="divContent_one">
@@ -68,11 +51,9 @@
                 <div class="divRazdel"></div>
             </div>
 
-
-
-
+            <!--О НАС-->
             <div class="divZag_two">
-                <div class="divZagol divH2">
+                <div class="divZagol divH2 divH2_afterOne">
                     <h2>О НАС </h2>
                 </div>
                 <div class="divContent_two">
@@ -88,17 +69,187 @@
                         <b>Ремонт одежды.</b> Многие любимые вещи можно спасти: перешить, ушить перекрасить и так далее. Мастера "YourStyle" с удовольствием помогут.
                     </p>
                     <p>
-                        <b>Бонусы.</b> Скидка для постоянных клиенток — 5% на пошив и ремонт коженных изделий. По средам в ателье действует скидка в 15% на ремонт обуви.
+                        <b>Бонусы.</b> Скидка для постоянных клиентов — 5% на пошив и ремонт коженных изделий. По средам в ателье действует скидка в 15% на ремонт обуви.
                     </p>
                     <p>Модникам всегда мало того, что предлагают магазины, даже брендовые. Ведь всегда есть собственные идеи того, как хочется одеваться. Ателье "Your Style" как раз поможет их реализовать!
                     </p>
+                </div>
+                <div class="divRazdel"></div>
+            </div>
+
+            <!--Наши услуги-->
+            <div class="divZag_three">
+                <div class="divZagol divH2 divH2_afterTwo">
+                    <h2 id="yslygi">НАШИ УСЛУГИ</h2>
+                </div>
+                <div class="divContent_three">
+                    <div class="divYslygi_menu divYslygi_menu1">
+                        <div class="divYslygi_logo divYslygi_logo1"></div>
+                        <div class="divYslygi_h3">
+                            <h3 class="h3">ОБУВЬ</h3>
+                            <ul class="ulYslygi">
+                                <li>Любые виды ремонта обуви. Замена подкладки, голенища, задника, подошвы и др.;</li>
+                                <li>Изменение дизайна обуви. Реставрация обуви;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="divYslygi_menu divYslygi_menu2">
+                        <div class="divYslygi_logo divYslygi_logo2"></div>
+                        <div class="divYslygi_h3">
+                            <h3 class="h3">КОЖЕННЫЕ ИЗДЕЛИЯ</h3>
+                            <ul class="ulYslygi">
+                                <li>Заклеем порывы или разрезы коженного изделия;</li>
+                                <li>Перекроим, перешьем вещь;</li>
+                                <li>Заменим фрагмент или целую деталь одежды;</li>
+                                <li>Изменим длину изделия или рукава;</li>
+                                <li>заменим сломанную фурнитуру;</li>
+                                <li>Перекрасим или подкрасим изделия (куртки, обувь, сумки);</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="divYslygi_menu divYslygi_menu3">
+                        <div class="divYslygi_logo divYslygi_logo3"></div>
+                        <div class="divYslygi_h3">
+                            <h3 class="h3">МЕХОВЫЕ ИЗДЕЛИЯ</h3>
+                            <ul class="ulYslygi">
+                                <li>Пошив и перешив меховых изделий;</li>
+                                <li>Изготовление аксессуаров из меха;</li>
+                                <li>Пошив меховых головных уборов;</li>
+                                <li> Ремонт головных уборов;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="divYslygi_menu divYslygi_menu4">
+                        <div class="divYslygi_logo divYslygi_logo4"></div>
+                        <div class="divYslygi_h3">
+                            <h3 class="h3">Аксессуары</h3>
+                            <ul class="ulYslygi">
+                                <li>Изготовление любых аксессуаров из кожи меха;</li>
+                                <li>Ремонт аксессуаров;</li>
+                                <li>Перекраска и подкраска коженных аксессуаров;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divRazdel"></div>
+            </div>
+
+            <!--Наши работы-->
 
 
+            <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <div id="slides">
+                <div class="overflow">
+                    <div class="inner">
+                        <div class="page">
+                            <img src="http://informat.com.ua/wp-content/uploads/2016/12/5sila.jpg" alt=""></img>
+                        </div>
+                        <div class="page">
+                            <img src="http://www.kartinki24.ru/uploads/posts/2009-02/1234100030_nature1_preview.jpg" alt=""></img>
+                        </div>
+                        <div class="page">
+                            <img src="http://boobooka.com/wp-content/uploads/2013/08/1325247384_prednovogodnie_kartinki_47.jpg" alt=""></img>
+                        </div>
+                        <div class="page">
+                            <img src="http://imperiya.by/image/tpPPLAmzujG.jpg" alt=""></img>
+                        </div>
+                        <div class="page">
+                            <img src="http://www.youloveit.ru/uploads/posts/2013-05/1368285485_youloveit_ru_kartinki_leto06.jpg" alt=""></img>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
 
+            <div id="active">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+</div>
+
+
+
+
+
+            <div class="divRazdel"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--Контакты-->
+            <div class="divZag_four">
+                <div class="divZagol divH2 divH2_afterThree">
+                    <h2 id="contant">КОНТАКТЫ</h2>
+                </div>
+                <div class="divMap">
+                    <iframe class="iframeMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055.712260893519!2d24.357626534902657!3d52.213086944502145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472120923491585f%3A0x450bd50303ecbc13!2z0KLQstC-0Lkg0KHRgtC40LvRjCDQkNGC0LXQu9GM0LU!5e0!3m2!1sru!2sby!4v1527087214514"
+                        width="40%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+                <div class="divContacts">
+                    <div class="divAdress">Адресс: Брестская обл., г. Кобрин, ул. 13 Сентября д.1
+                    </div>
+                    <div class="divWorkTime">
+                        Время работы:<br> пн-пт: 9<sup>00</sup>-18<sup>00</sup> <br>сб: 9<sup>00</sup>-15<sup>00</sup>
+                    </div>
+                    <div class="divNumber">
+                        тел: +375-(29)-828-33-55
+
+                    </div>
+                    <div class="divEmail">Email:YSKobrin@gmail.com</div>
+                </div>
+                <div class="divRazdel"></div>
+            </div>
+        </div>
+
+    </main>
+    <!--Footer-->
     <footer class="footer">
         <div class="divFooter divFooter_left">
             <p>

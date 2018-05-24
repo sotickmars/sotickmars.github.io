@@ -1,0 +1,71 @@
+#slider{
+    margin:0 auto;
+    width: 600;
+    position: relative;
+}
+#slides{
+    box-shadow:2px 2px 4px #333;
+    padding: 5px;
+    background:#fff;
+    border-radius: 5px;
+    width: 640px;
+    margin: 0 auto;
+}
+.inner{  
+    width: 500%;
+}
+.inner:after{
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+.page{
+    float: left;
+    width: 20%;
+}
+.page img{
+    width: 600px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+#slider inut{
+    display: none;
+}
+#controls label{
+    opacity: 0.3;
+    cursor: pointer
+}
+#slide1:checked ~ #controls label:nth-child(1),
+#slide1:checked ~ #controls label:nth-child(2),
+#slide1:checked ~ #controls label:nth-child(3),
+#slide1:checked ~ #controls label:nth-child(4),
+#slide1:checked ~ #controls label:nth-child(5){
+    display: block;
+    width: 0;
+    height: 0;
+    border-top:20px solid transparent;
+    border-left:20px solid #333;
+    border-bottom: 20px solid transparent;
+    float: right;
+    margin-right: -30px;
+    
+}
+#slide1:checked ~ #controls label:nth-child(1),
+#slide1:checked ~ #controls label:nth-child(2),
+#slide1:checked ~ #controls label:nth-child(3),
+#slide1:checked ~ #controls label:nth-child(4),
+#slide1:checked ~ #controls label:nth-child(5){
+    display: block;
+    width: 0;
+    height: 0;
+    border-top:20px solid transparent;
+    border-right:20px solid #333;
+    border-bottom: 20px solid transparent;
+    float: left;
+    margin-left: -2px;
+    
+}

@@ -19,7 +19,9 @@
     transform: translateX(-50%);
 }
 
-
+.aMenu{
+    color: #fff;
+}
 p {
     margin-left: 2%;
     text-indent: 3%;
@@ -39,17 +41,19 @@ p {
     margin-bottom: 20px;
 }
 
-.divZag_one:after {
+.divZag_one:after,
+.divZag_two:after{
     content: "";
     display: block;
     border: 1px solid lightgray;
 }
+
 .divRazdel{
     clear: both;
     height: 20px;
 }
 
-.divH2:after {
+.divH2_afterOne:after {
     content: "";
     display: block;
     background-image: url(../imgs/menu.png);
@@ -75,4 +79,120 @@ p {
     transform: scale(1.2, 1.2);
     transition: 1s;
     
+}
+
+
+.divH2_afterTwo:after{
+    content: "";
+    display: block;
+    background-image: url(../imgs/menu.png);
+    background-repeat: no-repeat;
+    background-position: -5.1% 66%;
+    background-size: 1110px;
+    height: 80px;
+    width: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.divYslygi_menu {
+    width: 24%;
+    float: left;
+}
+
+.h3{
+    margin-left: 10%;
+    border:2px dashed #000;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.h3:hover{
+    background: #160c06;
+    color:#fff;
+    border:2px dashed #fff;
+}
+
+.divYslygi_logo{
+    border-radius: 50%;
+    height: 18vw;
+    background-image: url(../imgs/spraitYslygi.png);
+    background-repeat: no-repeat;
+    background-size:400%;
+}
+
+.divYslygi_logo1{
+    background-position:-5.5% 29%;
+    transition: 0.7s;
+}
+
+.divYslygi_logo2{
+    background-position: 59.5% 29%;
+    transition: 0.7s;
+}
+.divYslygi_logo3{
+    background-position: -5.5% 11.5%;
+    transition: 0.7s;
+}
+.divYslygi_logo4{
+    background-position: 59.5% 11.5%;
+    transition: 0.7s;
+}
+.divYslygi_logo1:hover{
+    background-position:28.5% 29%;
+    transition: 0.7s
+}
+.divYslygi_logo2:hover{
+    background-position:92% 29%;
+    transition: 0.7s
+}
+
+.divYslygi_logo3:hover{
+    background-position: 28.5% 11.5%;
+    transition: 0.7s
+}
+
+.divYslygi_logo4:hover{
+    background-position: 92% 11.5%;
+    transition: 0.7s;
+}
+ .ulYslygi:hover{
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+ }
+
+/*Услуги*/
+
+.divZag_four{
+    background-image: url(../imgs/kobrin.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.iframeMap{
+    margin-left: 2%;
+    margin-right: 10%;
+    float: left;
+}
+
+.divH2_afterThree:after{
+    content: "";
+    display: block;
+    background-image: url(../imgs/menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 85.5%;
+    background-size: 1110px;
+    height: 80px;
+    width: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.divAdress,
+.divWorkTime,
+.divNumber,
+.divEmail{
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 1px #fff
 }
