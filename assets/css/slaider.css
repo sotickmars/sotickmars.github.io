@@ -1,71 +1,51 @@
-#slider{
-    margin:0 auto;
-    width: 600;
-    position: relative;
-}
-#slides{
-    box-shadow:2px 2px 4px #333;
-    padding: 5px;
-    background:#fff;
-    border-radius: 5px;
+.slider{
     width: 640px;
-    margin: 0 auto;
-}
-.inner{  
-    width: 500%;
-}
-.inner:after{
-    display: block;
-    content: "";
-    clear: both;
-    height: 0;
-}
-.page{
-    float: left;
-    width: 20%;
-}
-.page img{
-    width: 600px;
+	position: relative;
+	padding-top: 320px;
+	margin: 20px auto;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.8 );
 }
 
-.overflow{
-    overflow: hidden;
+
+label>img{
+	width: 100px;
+}
+.slider>img{
+	position: absolute;
+	width: 100%;
+	left: 0; top: 0;
+	transition: all 0.5s;
 }
 
-#slider inut{
-    display: none;
+.slider input[name="slide"]{
+	display: none;
 }
-#controls label{
-    opacity: 0.3;
-    cursor: pointer
+
+.slider label{
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	float: left;
+	cursor: pointer;
+	transition: 0.5s;
+	opacity: 0.6;
 }
-#slide1:checked ~ #controls label:nth-child(1),
-#slide1:checked ~ #controls label:nth-child(2),
-#slide1:checked ~ #controls label:nth-child(3),
-#slide1:checked ~ #controls label:nth-child(4),
-#slide1:checked ~ #controls label:nth-child(5){
-    display: block;
-    width: 0;
-    height: 0;
-    border-top:20px solid transparent;
-    border-left:20px solid #333;
-    border-bottom: 20px solid transparent;
-    float: right;
-    margin-right: -30px;
-    
+
+.slider img{
+	display: block;
 }
-#slide1:checked ~ #controls label:nth-child(1),
-#slide1:checked ~ #controls label:nth-child(2),
-#slide1:checked ~ #controls label:nth-child(3),
-#slide1:checked ~ #controls label:nth-child(4),
-#slide1:checked ~ #controls label:nth-child(5){
-    display: block;
-    width: 0;
-    height: 0;
-    border-top:20px solid transparent;
-    border-right:20px solid #333;
-    border-bottom: 20px solid transparent;
-    float: left;
-    margin-left: -2px;
-    
+
+
+.slider input[name="slide"]:checked+label{
+	border-color: #666;
+	opacity: 1;
+}
+
+.slider input[name="slide"] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+
+.slider input[name="slide"]:checked+label+img{
+	opacity: 1;
+	transform: scale(1);
 }

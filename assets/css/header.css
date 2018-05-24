@@ -4,6 +4,29 @@ body{
     
 }
 
+
+
+
+
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky{
+  padding-top: 60px;
+}
+
+
+
+
+
+
+
 .header{
     max-width:1200px;
     height: 700px;
@@ -50,7 +73,7 @@ body{
  
 }
 
-.divMenu{
+#divMenu{
     height:50px;
     margin-top: 70px;
     display: flex;
@@ -60,18 +83,21 @@ body{
     
 }
 
-.divMenu>.divPynkt{
+#divMenu>.divPynkt{
     padding-left: 5%;
     padding-right: 5%;
     color:#fff;
     transition: 0.2s;
 }
 
-.divMenu>.divPynkt:hover{
+#divMenu>.divPynkt:hover{
      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
      transform: scale(1.4, 1.4);
      border-radius: 4px;
      transition: 0.2s;
      padding-top: 15px;
      padding-bottom: 15px;
+}
+.aMenu{
+    text-decoration: none;
 }

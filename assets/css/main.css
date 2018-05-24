@@ -42,7 +42,8 @@ p {
 }
 
 .divZag_one:after,
-.divZag_two:after{
+.divZag_two:after,
+.divZag_three:after{
     content: "";
     display: block;
     border: 1px solid lightgray;
@@ -105,17 +106,19 @@ p {
     border:2px dashed #000;
     text-align: center;
     transition: 0.7s;
+   
 }
 
 .h3:hover{
     background: #160c06;
     color:#fff;
     border:2px dashed #fff;
+     box-shadow: 4px 4px 4px #333;
 }
 
 .divYslygi_logo{
     border-radius: 50%;
-    height: 18vw;
+    height: 20vw;
     background-image: url(../imgs/spraitYslygi.png);
     background-repeat: no-repeat;
     background-size:400%;
@@ -123,45 +126,61 @@ p {
 
 .divYslygi_logo1{
     background-position:-5.5% 29%;
-    transition: 0.7s;
+    
 }
 
 .divYslygi_logo2{
     background-position: 59.5% 29%;
-    transition: 0.7s;
 }
+
 .divYslygi_logo3{
     background-position: -5.5% 11.5%;
-    transition: 0.7s;
 }
+
 .divYslygi_logo4{
     background-position: 59.5% 11.5%;
-    transition: 0.7s;
 }
+
 .divYslygi_logo1:hover{
     background-position:28.5% 29%;
-    transition: 0.7s
+    
 }
 .divYslygi_logo2:hover{
     background-position:92% 29%;
-    transition: 0.7s
+    
 }
 
 .divYslygi_logo3:hover{
     background-position: 28.5% 11.5%;
-    transition: 0.7s
 }
 
 .divYslygi_logo4:hover{
     background-position: 92% 11.5%;
-    transition: 0.7s;
 }
  .ulYslygi:hover{
     transform: scale(1.1, 1.1);
     transition: 1s;
  }
+ 
+ 
+ /*Slider*/
+ 
+ .divH2_afterThree:after{
+    content: "";
+    display: block;
+    background-image: url(../imgs/menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 85.5%;
+    background-size: 1110px;
+    height: 80px;
+    width: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+ 
+ 
 
-/*Услуги*/
+/*Контакты*/
 
 .divZag_four{
     background-image: url(../imgs/kobrin.png);
@@ -176,7 +195,7 @@ p {
     float: left;
 }
 
-.divH2_afterThree:after{
+.divH2_afterFour:after{
     content: "";
     display: block;
     background-image: url(../imgs/menu.png);
@@ -195,4 +214,18 @@ p {
 .divEmail{
     margin-bottom: 10px;
     text-shadow: 2px 2px 1px #fff
+}
+.divYslygi_logo:hover{
+    animation: gryg 2s ease-in infinite;
+    
+}
+
+@keyframes gryg{
+    
+    0%{
+        transform: rotateY(0grad);
+    }
+    50%{
+        transform: rotateY(180grad);
+    }
 }

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/footer.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/slaider.css" type="text/css" />
-    <script type="text/javascript" src="assets/js/slider.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 <div class="adressEmail">email:YSKobrin@gmail.com</div>
             </div>
             <div class="divLogo_center"></div>
-            <div class="divMenu">
+            <div id="divMenu">
                 <div class="divPynkt divGlava"><a class="aMenu" href="#glava" title="Глава">Главная</a></div>
                 <div class="divPynkt divYslygi"><a class="aMenu" href="#yslygi" title="услуги">Услуги</a></div>
                 <div class="divPynkt divWork"><a class="aMenu" href="#work" title="Наши работы">Наши работы</a></div>
@@ -42,8 +42,8 @@
                 <div class="divZagolAfter"></div>
                 <div class="divContent_one">
                     <img class="imgContent1 img" src="assets/imgs/content1.jpg" alt="Коричневая обувь"></img>
-                    <p>Ателье "Your Style" - одно из лучших ателье по ремонту коженных и меховых изделий, покраске и реставрации кожи, пошиву меховых изделий и шапок в Брестской области.<br> Наши мастера повышают свою квалификацию и всегда готовы удовлетворить
-                        самые взыскательные вкусы наших Клиентов.Опыт высококвалифицированных мастеров, современные технологии работы с любыми видами меха и кожи, новейшее оборудование, индивидуальный подход к каждому клиенту – залог нашего успеха с 1994
+                    <p>Ателье "Your Style" - одно из лучших ателье по ремонту коженных и меховых изделий, покраске и реставрации кожи, пошиву меховых изделий и шапок.<br> Наши мастера повышают свою квалификацию и всегда готовы удовлетворить
+                        самые взыскательные вкусы наших Клиентов.Опыт высококвалифицированных мастеров, современные технологии работы с любыми видами меха и кожи, новейшее оборудование, индивидуальный подход к каждому клиенту – залог нашего успеха с 1991
                         года. Мы создаем и ремонтируем изделия, подчеркивая стиль, индивидуальность и красоту!
                     </p>
                     <p>Ждем Вас в ателье «Твой Стиль»!</p>
@@ -80,7 +80,7 @@
             <!--Наши услуги-->
             <div class="divZag_three">
                 <div class="divZagol divH2 divH2_afterTwo">
-                    <h2 id="yslygi">НАШИ УСЛУГИ</h2>
+                    <h2 id="yslygi">УСЛУГИ</h2>
                 </div>
                 <div class="divContent_three">
                     <div class="divYslygi_menu divYslygi_menu1">
@@ -88,7 +88,7 @@
                         <div class="divYslygi_h3">
                             <h3 class="h3">ОБУВЬ</h3>
                             <ul class="ulYslygi">
-                                <li>Любые виды ремонта обуви. Замена подкладки, голенища, задника, подошвы и др.;</li>
+                                <li>Любые виды ремонта обуви. Замена подошвы, коблуков. Растяжка и реставрация обуви, ушивка и расшивка голенища. Изменение модели.;</li>
                                 <li>Изменение дизайна обуви. Реставрация обуви;</li>
                             </ul>
                         </div>
@@ -136,96 +136,39 @@
             </div>
 
             <!--Наши работы-->
-
-
-            <div id="slider">
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
-            <input type="radio" name="slider" id="slide5">
-            <div id="slides">
-                <div class="overflow">
-                    <div class="inner">
-                        <div class="page">
-                            <img src="http://informat.com.ua/wp-content/uploads/2016/12/5sila.jpg" alt=""></img>
-                        </div>
-                        <div class="page">
-                            <img src="http://www.kartinki24.ru/uploads/posts/2009-02/1234100030_nature1_preview.jpg" alt=""></img>
-                        </div>
-                        <div class="page">
-                            <img src="http://boobooka.com/wp-content/uploads/2013/08/1325247384_prednovogodnie_kartinki_47.jpg" alt=""></img>
-                        </div>
-                        <div class="page">
-                            <img src="http://imperiya.by/image/tpPPLAmzujG.jpg" alt=""></img>
-                        </div>
-                        <div class="page">
-                            <img src="http://www.youloveit.ru/uploads/posts/2013-05/1368285485_youloveit_ru_kartinki_leto06.jpg" alt=""></img>
-                        </div>
-                    </div>
+            <div class="divWork">
+                <div class="divZagol divH2 divH2_afterTwo">
+                    <h2 id="work" >НАШИ РАБОТЫ</h2>
                 </div>
+
+                <div class="slider">
+                    <input checked type="radio" name="slide" id="id1" />
+                    <label for="id1"><img src="assets/imgs/slider1.jpg" alt="обувь" title="обувь"></label>
+                    <img src="assets/imgs/slider1.jpg" />
+
+                    <input type="radio" name="slide" id="id2" />
+                    <label for="id2"><img src="assets/imgs/slider2.jpg"/></label>
+                    <img src="assets/imgs/slider2.jpg" />
+
+                    <input type="radio" name="slide" id="id3" />
+                    <label for="id3"><img src="assets/imgs/slider3.jpg"/></label>
+                    <img src="assets/imgs/slider3.jpg" />
+
+                    <input type="radio" name="slide" id="id4" />
+                    <label for="id4"><img src="assets/imgs/slider4.jpg"/></label>
+                    <img src="assets/imgs/slider4.jpg" />
+
+                    <input type="radio" name="slide" id="id5" />
+                    <label for="id5"><img src="assets/imgs/slider5.jpg"/></label>
+                    <img src="assets/imgs/slider5.jpg" />
+                </div>
+
+                <div class="divRazdel"></div>
             </div>
-            <div id="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
-            </div>
-
-            <div id="active">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
-            </div>
-</div>
-
-
-
-
-
-            <div class="divRazdel"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <!--Контакты-->
             <div class="divZag_four">
-                <div class="divZagol divH2 divH2_afterThree">
+                <div class="divZagol divH2 divH2_afterFour">
                     <h2 id="contant">КОНТАКТЫ</h2>
                 </div>
                 <div class="divMap">

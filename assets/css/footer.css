@@ -53,9 +53,6 @@
     animation:ball  1.9s ease-in infinite;
 }
 
-.a:hover{
-    color: #000;
-}
 
 @keyframes ball{
     
