@@ -118,8 +118,9 @@ p {
     background: #160c06;
     color:#fff;
     border:2px dashed #fff;
-     box-shadow: 4px 4px 4px #333;
+    box-shadow: 4px 4px 4px #333;
 }
+
 
 .divYslygi_logo{
     border-radius: 50%;
@@ -165,10 +166,12 @@ p {
     background-position: 92% 11.5%;
 }
  .ulYslygi:hover{
-    transform: scale(1.1, 1.1);
-    transition: 1s;
+    transition:0.4s;
+    text-shadow: 4px 4px 10px #555;
  }
- 
+ .ulYslygi{
+    transition: 0.4s;
+}
  
  /*Slider*/
  

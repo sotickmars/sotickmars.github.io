@@ -1,0 +1,56 @@
+@media (max-width:750px){
+
+.divAdress_right,
+.divLogo_left,
+.divWork,
+.divH1:after,
+.divH2:after,
+
+.divFooter_rightVK,
+.divFooter_rightIns{
+    display: none;
+    
+}
+
+
+.imgContent1,
+.imgContent2{
+    float: none;
+    width: 100%;
+    transform:none;
+    margin:0 ;
+    box-shadow: none;
+}
+.imgContent1:hover,
+.imgContent2:hover{
+    transform:none;
+}
+.divYslygi_menu {
+    width: 100%;
+    float: left;
+}
+.h3{
+    margin: 0 auto;
+    width: 40%;
+    border:2px dashed #000;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.ulYslygi{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.headerDiv{
+    margin-top:-60px;
+    height: 400px
+}
+
+}
+
+
+
+
+
+
