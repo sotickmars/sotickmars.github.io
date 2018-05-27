@@ -21,8 +21,7 @@
     margin:0 ;
     box-shadow: none;
 }
-.imgContent1:hover,
-.imgContent2:hover{
+.img:hover{
     transform:none;
 }
 .divYslygi_menu {
@@ -44,11 +43,37 @@
 
 .headerDiv{
     margin-top:-60px;
-    height: 400px
+    height: 560px
 }
 
+#divMenu{
+    height: 100px;
+    margin-top: 130px;
 }
-
+.sticky{
+    top: -160px;
+}
+.iframeMap{
+    float: none;
+    width: 80%;
+}
+.divContacts{
+    float: none;
+    margin: 0 auto;
+}
+}
+@media (max-width:300px){
+ *{
+        font-size: 6vmin;
+    }
+   
+ul{
+     padding: 0;
+}
+.button{
+     width: 23vmin;
+}
+}
 
 
 
