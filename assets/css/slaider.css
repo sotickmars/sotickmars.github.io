@@ -3,17 +3,20 @@
 	position: relative;
 	padding-top: 320px;
 	margin: 20px auto;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.8 );
+	-webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.8 );
+	        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.8 );
 }
-
 
 label>img{
 	width: 100px;
 }
+
 .slider>img{
 	position: absolute;
 	width: 100%;
 	left: 0; top: 0;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -26,6 +29,8 @@ label>img{
 	border: 3px solid #999;
 	float: left;
 	cursor: pointer;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 	opacity: 0.6;
 }
@@ -34,7 +39,6 @@ label>img{
 	display: block;
 }
 
-
 .slider input[name="slide"]:checked+label{
 	border-color: #666;
 	opacity: 1;
@@ -42,10 +46,14 @@ label>img{
 
 .slider input[name="slide"] ~ img {
 	opacity: 0;
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .slider input[name="slide"]:checked+label+img{
 	opacity: 1;
-	transform: scale(1);
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 }

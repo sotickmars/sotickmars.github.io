@@ -1,5 +1,6 @@
 .divBoots{
     overflow: hidden;
+    padding-right: 2%;
 }
 
 .bootsWork,
@@ -8,9 +9,16 @@
     float: right;
     margin-right: 10%;
     margin-left: 5%;
-    box-shadow: 5px 5px 5px #333;
+    -webkit-box-shadow: 5px 5px 5px #333;
+            box-shadow: 5px 5px 5px #333;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
     transition: transform 1s;
-    transform: translateX(1000px);
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform: translateX(1000px);
+        -ms-transform: translateX(1000px);
+            transform: translateX(1000px);
 }
 .letherWork,
 .aksWork{
@@ -18,9 +26,16 @@
     width: 30%;
     margin-right: 5%;
     margin-left: 5%;
-    box-shadow: -5px 5px 5px #333;
+    -webkit-box-shadow: -5px 5px 5px #333;
+            box-shadow: -5px 5px 5px #333;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
     transition: transform 1s;
-    transform: translateX(-1000px);
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+            transform: translateX(-1000px);
 }
 
 
@@ -28,7 +43,13 @@
 .divContentLether:hover .letherWork,
 .divContentMex:hover .mexWork,
 .divContentBoot:hover .bootsWork{
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+   
+    -webkit-transition: 1s;
+   
+    -o-transition: 1s;
    
     transition: 1s;
 }
