@@ -1,17 +1,23 @@
-@media (max-width:750px){
+@media (max-width:750px) and (max-device-width:2000px){
 
 .divAdress_right,
 .divLogo_left,
-.divWork,
 .divH1:after,
 .divH2:after,
-
 .divFooter_rightVK,
 .divFooter_rightIns{
     display: none;
     
 }
 
+.divLogo_center{
+    height:430px;
+    background-image: url(../imgs/logocentr.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-top: 60px;
+    background-size: 55%
+}
 
 .imgContent1,
 .imgContent2{
@@ -61,7 +67,45 @@
     float: none;
     margin: 0 auto;
 }
+
+
+
+
+.slider{
+    width: 80vmin;
+    padding: inherit;
 }
+
+
+.divWork label+img{
+    width: 80vmin;
+    margin-left: 50%;
+    transform: translateX(-50%)!important;
+}
+.divWork label>img{
+    width: 8vmin;
+}
+.divWork label{
+    position: relative;
+    margin-top: 45vmin;
+    margin-left: 1vmin;
+    margin-right: 1vmin;
+    
+}
+.divWork label:nth-of-type(1){
+    margin-left: 13vmin
+}
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width:300px){
  *{
         font-size: 6vmin;
