@@ -152,6 +152,7 @@ p {
     -webkit-transition: 0.7s;
     -o-transition: 0.7s;
     transition: 0.7s;
+    animation:boom  1.9s ease-in infinite;
 }
 
 .h3:hover {
@@ -160,6 +161,26 @@ p {
     border: 2px dashed #fff;
     -webkit-box-shadow: 4px 4px 4px #333;
             box-shadow: 4px 4px 4px #333;
+            animation:boom  0.8s ease-in infinite;
+            
+}
+
+@keyframes boom{
+   0%{
+    transform: scale(1);
+   }
+   20%{
+    transform: scale(1.02);
+   }
+   60%{
+    transform: scale(1);
+   }
+   80%{
+    transform: scale(1.03);
+   }
+   100%{
+    transform: scale(1);
+   }
 }
 
 .divYslygi_logo {
