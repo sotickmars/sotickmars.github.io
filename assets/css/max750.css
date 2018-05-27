@@ -27,13 +27,16 @@
     margin:0 ;
     box-shadow: none;
 }
+
 .img:hover{
     transform:none;
 }
+
 .divYslygi_menu {
     width: 100%;
     float: left;
 }
+
 .h3{
     margin: 0 auto;
     width: 40%;
@@ -56,19 +59,20 @@
     height: 100px;
     margin-top: 130px;
 }
+
 .sticky{
     top: -160px;
 }
+
 .iframeMap{
     float: none;
     width: 80%;
 }
+
 .divContacts{
     float: none;
     margin: 0 auto;
 }
-
-
 
 
 .slider{
@@ -82,32 +86,26 @@
     margin-left: 50%;
     transform: translateX(-50%)!important;
 }
+
 .divWork label>img{
     width: 8vmin;
 }
+
 .divWork label{
     position: relative;
     margin-top: 45vmin;
     margin-left: 1vmin;
     margin-right: 1vmin;
-    
 }
+
 .divWork label:nth-of-type(1){
     margin-left: 13vmin
 }
 }
 
 
-
-
-
-
-
-
-
-
 @media (max-width:300px){
- *{
+*{
         font-size: 6vmin;
     }
    
