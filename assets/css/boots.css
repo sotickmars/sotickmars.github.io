@@ -1,0 +1,37 @@
+.divBoots{
+    overflow: hidden;
+}
+
+.bootsWork,
+.mexWork{
+width: 40%;
+    float: right;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 5px #333;
+    transition: transform 1s;
+    transform: translateX(1000px);
+}
+.letherWork,
+.aksWork{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+    box-shadow: -5px 5px 5px #333;
+    transition: transform 1s;
+    transform: translateX(-1000px);
+}
+
+.mexWork{
+    margin-top: 50px;
+}
+.divContentAks:hover .aksWork,
+.divContentLether:hover .letherWork,
+.divContentMex:hover .mexWork,
+.divContentBoot:hover .bootsWork{
+    transform: translateX(0px);
+    margin-bottom: 4%;
+    transition: 1s;
+}
