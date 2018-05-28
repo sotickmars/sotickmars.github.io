@@ -152,7 +152,8 @@ p {
     -webkit-transition: 0.7s;
     -o-transition: 0.7s;
     transition: 0.7s;
-    animation:boom  1.9s ease-in infinite;
+    -webkit-animation:boom  1.9s ease-in infinite;
+            animation:boom  1.9s ease-in infinite;
 }
 
 .h3:hover {
@@ -161,25 +162,53 @@ p {
     border: 2px dashed #fff;
     -webkit-box-shadow: 4px 4px 4px #333;
             box-shadow: 4px 4px 4px #333;
-            animation:boom  0.8s ease-in infinite;
-            
+            -webkit-animation:boom  0.8s ease-in infinite;
+                    animation:boom  0.8s ease-in infinite;
+}
+
+@-webkit-keyframes boom{
+   0%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+   }
+   20%{
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+   }
+   60%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+   }
+   80%{
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+   }
+   100%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+   }
 }
 
 @keyframes boom{
    0%{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
    }
    20%{
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
    }
    60%{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
    }
    80%{
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
    }
    100%{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
    }
 }
 

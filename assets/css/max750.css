@@ -107,6 +107,56 @@
 .divWork label:nth-of-type(1){
     margin-left: 13vmin;
 }
+
+
+.aMenu{
+    text-decoration: none;
+    position: absolute;
+}
+
+label[for=menuYS]{
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.aMenu{
+    transform: translateX(-800px)
+}
+
+input[type=checkbox]:checked~.aMenu{
+    display: block;
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    height: 50px;
+    background:#333;
+    transform: translateX(0);
+}
+
+.aOne{
+    top:665px;
+}
+
+.aTwo{
+    top:715px;
+}
+
+.aThree{
+    top:765px;
+}
+
+.aFour{
+    top:815px;
+}
+
+.sticky{
+    position: absolute;
+}
 }
 
 @media (max-width:300px){

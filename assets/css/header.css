@@ -39,9 +39,8 @@ body{
 .divAdress_right{
     margin-top: -90px;
     margin-left: 70%;
-   
-    
 }
+
 .adressPhone,
 .adressEmail{
     font-size:14px;
@@ -74,7 +73,7 @@ body{
     
 }
 
-#divMenu>.divPynkt{
+#divMenu>.aMenu{
     padding-left: 5%;
     padding-right: 5%;
     color:#fff;
@@ -83,7 +82,7 @@ body{
     transition: 0.2s;
 }
 
-#divMenu>.divPynkt:hover{
+#divMenu>.aMenu:hover{
      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(255, 255, 255, 0.1)));
      background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
      background: -o-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
@@ -99,6 +98,12 @@ body{
      padding-bottom: 15px;
      transition: 0.2s;
 }
+
+input[type=checkbox],
+label[for=menuYS]{
+    display: none;
+}
+
 .aMenu{
     text-decoration: none;
 }
