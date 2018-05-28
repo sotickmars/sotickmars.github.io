@@ -122,6 +122,7 @@ label[for=menuYS]{
     text-align: center;
     font-size: 30px;
     color: #fff;
+    line-height: 3em;
 }
 
 .aMenu{
@@ -139,24 +140,34 @@ input[type=checkbox]:checked~.aMenu{
 }
 
 .aOne{
-    top:665px;
+    top:660px;
 }
 
 .aTwo{
-    top:715px;
+    top:710px;
 }
 
 .aThree{
-    top:765px;
+    top:760px;
 }
 
 .aFour{
-    top:815px;
+    top:810px;
 }
 
+.aOne,
+.aTwo,
+.aThree,
+.aFour{
+    line-height: 3em;
+}
 .sticky{
     position: absolute;
 }
+.divZag_oneMob{
+    margin-top: -30px;
+}
+
 }
 
 @media (max-width:300px){
