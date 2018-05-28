@@ -53,7 +53,6 @@
 
 .ulYslygi{
     width: 80%;
-    margin: 10px auto;
 }
 
 .headerDiv{
@@ -72,14 +71,14 @@
 
 .iframeMap{
     float: none;
-    width: 80%;
-    margin-left:50%;
-    transform: translateX(-50%);
+    width: 99.8%;
+    margin: 0;
 }
 
 .divContacts{
     float: none;
-    margin: 0 auto;
+    width: 94%;
+    margin-left:2%;
 }
 
 .slider{
