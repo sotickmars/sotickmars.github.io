@@ -73,6 +73,8 @@
 .iframeMap{
     float: none;
     width: 80%;
+    margin-left:50%;
+    transform: translateX(-50%);
 }
 
 .divContacts{
